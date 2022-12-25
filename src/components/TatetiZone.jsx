@@ -8,6 +8,7 @@ export default (props) => {
 
     let handleState = () => {
             let turn = props.turn
+            console.log(turn)
             let simbol = (turn % 2) == 0 ? "cross" : "circle"
             setState(simbol)
     }
