@@ -57,3 +57,48 @@
                 font-size: 6.5rem;
                 color: #35FF1F;
             }
+.refresh-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+    background-color: #4f88c6;
+    border: solid 3px #446b9e;
+    border-radius: 50px;
+    margin: 10px auto;
+    color: #145651;
+    transition: 4s;
+}
+.refresh-button:hover{
+    box-shadow: 0px 0px 50px;
+    color: #FF3864;
+    background-color: #FF3864;
+    border: solid 3px #ff0037;
+}
+.refresh-button:hover .refresh-button-arrows{
+    animation: spin infinite 1s linear
+}
+.refresh-button:hover .refresh-button-text, .refresh-button:hover .refresh-button-arrows{
+    color: #741b2e;
+}
+    .refresh-button-arrows{
+        font-size: 24px;
+        transition: 1s;
+    }
+    .refresh-button-text{
+        font-family: 'Open Sans', sans-serif;;
+        font-size: 24px;
+        font-weight: 600;
+        transition: 1s;
+    }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
