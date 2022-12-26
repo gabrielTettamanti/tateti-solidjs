@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import styles from './App.module.css';
 import TatetiContainer from './components/TatetiContainer';
+import ResetButton from './components/ResetButton';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       </header>
       <main>
         <TatetiContainer />
+        <ResetButton />
       </main>
     </div>
   );
